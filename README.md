@@ -1,150 +1,142 @@
-# 🩺 PCOS Prediction Using Deep Learning
+<div align="center">
 
-A Streamlit-based web application that predicts the likelihood of **Polycystic Ovary Syndrome (PCOS)** using an Artificial Neural Network (ANN) trained on clinical patient data.
+# 🩺 PCOS Prediction using Deep Learning
+
+### Predicting Polycystic Ovary Syndrome using an Artificial Neural Network (ANN)
+
+<img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python"/>
+<img src="https://img.shields.io/badge/TensorFlow-DeepLearning-orange?style=for-the-badge&logo=tensorflow"/>
+<img src="https://img.shields.io/badge/Streamlit-WebApp-red?style=for-the-badge&logo=streamlit"/>
+<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
+
+</div>
 
 ---
 
-## 📌 Overview
+# 📖 About the Project
 
-Polycystic Ovary Syndrome (PCOS) is one of the most common hormonal disorders affecting women of reproductive age. Early prediction can help in timely diagnosis and lifestyle management.
+PCOS (Polycystic Ovary Syndrome) is one of the most common hormonal disorders affecting women.
 
-This project uses a Deep Learning model to predict whether a patient is at **High Risk** or **Low Risk** of PCOS based on clinical parameters and symptoms.
+This project uses a Deep Learning Artificial Neural Network to predict the likelihood of PCOS based on patient clinical information.
 
----
+The application provides:
 
-## ✨ Features
-
-- 🧠 Deep Learning (Artificial Neural Network)
-- 📊 PCOS Risk Prediction
-- 📈 Prediction Probability
+- 🩺 PCOS Risk Prediction
+- 📊 Prediction Confidence
+- 📈 Probability Score
 - 📋 Patient Summary
-- 💡 Personalized Health Recommendations
-- 🩸 Blood Group Encoding
-- 🌐 Interactive Streamlit Web Application
+- 💡 Health Recommendations
 
 ---
 
-## 🛠️ Technologies Used
+# ✨ Features
 
-- Python
-- TensorFlow / Keras
-- Streamlit
-- Pandas
-- Scikit-learn
-- Joblib
+✅ Interactive Streamlit Interface
+
+✅ Deep Learning ANN Model
+
+✅ Real-time Prediction
+
+✅ Probability Score
+
+✅ Health Recommendations
+
+✅ Patient Summary
 
 ---
 
-## 📂 Project Structure
+# 🧠 Model Architecture
 
-```text
-PCOS_Prediction_App/
+- Dense Layer (64 neurons)
+- Batch Normalization
+- Dropout
+- Dense Layer (32 neurons)
+- Batch Normalization
+- Dropout
+- Output Layer (Sigmoid)
+
+---
+
+# 📊 Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming |
+| TensorFlow/Keras | Deep Learning |
+| Streamlit | Web Application |
+| Pandas | Data Processing |
+| Scikit-Learn | Data Scaling |
+| Joblib | Model Serialization |
+
+---
+
+# 📷 Application Screenshots
+
+## 🏠 Home Page
+
+![Home](images/home.png)
+
+---
+
+## 🟢 Low Risk Prediction
+
+![Low Risk](images/low_prediction.png)
+
+---
+
+## 🔴 High Risk Prediction
+
+![High Risk](images/high_prediction.png)
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone https://github.com/Manasabonthala/PCOS_Prediction_App.git
+
+cd PCOS_Prediction_App
+
+pip install -r requirements.txt
+
+streamlit run app.py
+```
+
+---
+
+# 📂 Project Structure
+
+```
+PCOS_Prediction_App
 │
 ├── app.py
 ├── pcos_ann_model.keras
 ├── scaler.pkl
 ├── requirements.txt
 ├── README.md
-├── PCOS_Prediction_ANN.ipynb
-│
-└── images/
-    ├── high_risk.png
-    └── low_risk.png
+├── images
+│   ├── home.png
+│   ├── low_prediction.png
+│   └── high_prediction.png
+└── PCOS_Prediction_ANN_Optuna.ipynb
 ```
 
 ---
 
-## 🚀 Installation
+# 👩‍💻 Developer
 
-Clone the repository:
+**Bonthala Manasa**
 
-```bash
-git clone https://github.com/yourusername/PCOS_Prediction_App.git
-cd PCOS_Prediction_App
-```
+B.Tech Computer Science Engineering
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
-streamlit run app.py
-```
+Deep Learning | Machine Learning | Data Science
 
 ---
 
-## 📷 Application Screenshots
+<div align="center">
 
-### 🔴 High Risk Prediction
+### ⭐ If you like this project, don't forget to Star the Repository!
 
-![High Risk Prediction](images/high_risk.png)
+Made with ❤️ using TensorFlow & Streamlit
 
----
-
-### 🟢 Low Risk Prediction
-
-![Low Risk Prediction](images/low_risk.png)
-
----
-
-## 🧠 Model Information
-
-- Model: Artificial Neural Network (ANN)
-- Framework: TensorFlow / Keras
-- Input Features: 48 Clinical Parameters
-- Output:
-  - High Risk of PCOS
-  - Low Risk of PCOS
-
----
-
-## 📋 Input Features
-
-The model uses the following patient information:
-
-- Age
-- Weight
-- Height
-- BMI
-- Pulse Rate
-- Respiratory Rate
-- Hemoglobin
-- Menstrual Cycle Information
-- Pregnancy Details
-- Hormonal Parameters (FSH, LH, AMH, TSH, PRL)
-- Blood Sugar
-- Blood Pressure
-- Ultrasound Measurements
-- Symptoms
-- Blood Group
-
----
-
-## 🎯 Future Improvements
-
-- Explainable AI (XAI)
-- Model Confidence Visualization
-- PDF Report Generation
-- User Authentication
-- Cloud Deployment
-- Doctor Dashboard
-
----
-
-## 👩‍💻 Author
-
-** Bonthala Manasa **
-
-Computer Science Engineering Student
-
-Deep Learning • Machine Learning • Data Science • Python
-
----
-
-## ⭐ If you like this project
-
-Please consider giving it a ⭐ on GitHub!
+</div>
